@@ -33,7 +33,7 @@ ReconX solves this by giving you full visibility of the attack surface, fast —
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your_username/ReconX.git
+    git clone https://github.com/Aqshei/ReconX.git
     cd ReconX
     ```
 
