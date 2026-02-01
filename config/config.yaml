@@ -1,0 +1,32 @@
+# ReconX Configuration
+
+# Tool paths (if not in PATH)
+tools:
+  subfinder: "/home/ubuntu/bin/subfinder"
+  assetfinder: "assetfinder"
+  amass: "amass"
+  httpx: "/home/ubuntu/bin/httpx-pd"
+  naabu: "naabu"
+  gau: "/home/ubuntu/bin/gau"
+  katana: "katana"
+  nuclei: "/home/ubuntu/bin/nuclei"
+  arjun: "arjun"
+
+# API Keys (Optional but recommended for better results)
+api_keys:
+  shodan: ""
+  virustotal: ""
+  chaos: ""
+  github: ""
+
+# Scanning Preferences
+preferences:
+  threads: 50
+  timeout: 30
+  user_agent: "Mozilla/5.0 (X11; Linux x86_64) ReconX/1.0"
+  output_dir: "output"
+
+# Nuclei specific
+nuclei:
+  severity: "critical,high,medium"
+  templates_dir: "~/nuclei-templates"
