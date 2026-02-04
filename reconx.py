@@ -5,7 +5,23 @@ from modules.discovery import DiscoveryModule
 from modules.spidering import SpideringModule
 from modules.scanning import ScanningModule
 
+BANNER = r"""
+██████╗ ███████╗ ██████╗ ██████╗ ███╗   ██╗██╗  ██╗
+██╔══██╗██╔════╝██╔════╝██╔═══██╗████╗  ██║╚██╗██╔╝
+██████╔╝█████╗  ██║     ██║   ██║██╔██╗ ██║ ╚███╔╝ 
+██╔══██╗██╔══╝  ██║     ██║   ██║██║╚██╗██║ ██╔██╗ 
+██║  ██║███████╗╚██████╗╚██████╔╝██║ ╚████║██╔╝ ██╗
+╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝
+
+            ReconX by Akshay Talekar
+"""
+
+def show_banner():
+    print(BANNER)
+
 def main():
+    show_banner()  # <-- Banner prints here
+
     parser = argparse.ArgumentParser(description="ReconX - All-in-one reconnaissance framework.")
     parser.add_argument("-d", "--domain", required=True, help="Target domain for reconnaissance.")
     parser.add_argument("-c", "--config", default="config/config.yaml", help="Path to configuration file.")
